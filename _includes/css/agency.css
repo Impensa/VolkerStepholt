@@ -668,7 +668,7 @@ section#contact {
 }
 
 section#contact .section-heading {
-    color: #fff;
+    color: #ff0000;
 }
 
 section#contact .form-group {
@@ -724,6 +724,7 @@ section#contact:-ms-input-placeholder {
 section#contact .text-danger {
     color: #e74c3c;
 }
+
 
 footer {
     padding: 25px 0;
@@ -875,4 +876,9 @@ body {
     margin-right: auto;
     width: 300px;
     color: white;
+}
+
+
+#contact td { 
+    padding: 4px;
 }
