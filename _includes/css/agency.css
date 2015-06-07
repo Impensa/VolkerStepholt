@@ -268,7 +268,7 @@ header {
     background-attachment: scroll;
     background-image: url(img/Tiles2.JPG);
     background-position: center center;
-    
+    background-repeat: none;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -288,7 +288,7 @@ header .intro-text .intro-lead-in {
     line-height: 22px;
 }
 
-header .intro-text .intro-heading {
+header .intro-text .intro-heading, header .intro-text .intro-heading2 {
     margin-bottom: 25px;
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -296,6 +296,9 @@ header .intro-text .intro-heading {
     font-weight: 700;
     line-height: 50px;
 }
+
+header .intro-heading {display: none; }
+
 
 @media(min-width:768px) {
     header .intro-text {
@@ -311,7 +314,7 @@ header .intro-text .intro-heading {
         line-height: 40px;
     }
 
-    header .intro-text .intro-heading {
+    header .intro-text .intro-heading, header .intro-text .intro-heading2 {
         margin-bottom: 50px;
         text-transform: uppercase;
         font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -319,6 +322,9 @@ header .intro-text .intro-heading {
         font-weight: 700;
         line-height: 75px;
     }
+
+    header .intro-heading2 {display: none; }
+    header .intro-heading {display: block; }
 }
 
 section {
@@ -637,6 +643,7 @@ section h3.section-subheading {
 .team-member img {
     margin: 0 auto;
     border: 7px solid #fff;
+    max-height: 175px;
 }
 
 .team-member h4 {
@@ -861,4 +868,11 @@ img::-moz-selection {
 
 body {
     webkit-tap-highlight-color: #{{ site.color.primary }};
+}
+
+#contact table {
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    color: white;
 }
